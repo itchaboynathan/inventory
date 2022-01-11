@@ -1,0 +1,14 @@
+[
+    {
+        "material":"Origin",
+        "size":"12mm",
+        "amount":"50",
+        "id":1
+    },
+    {
+        "material":"Origin",
+        "size":"12mm",
+        "amount":"30",
+        "id":2
+    }
+]

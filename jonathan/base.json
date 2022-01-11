@@ -1,0 +1,32 @@
+[
+    {
+        "material":"Origin",
+        "size":"12mm",
+        "amount":"420",
+        "id":1
+    },
+    {
+        "material":"Wax",
+        "size":"16mm",
+        "amount":"2",
+        "id":2
+    },
+    {
+        "material":"Prime",
+        "size":"22mm",
+        "amount":"2",
+        "id":3
+    },
+    {
+        "material":"Origin",
+        "size":"12mm",
+        "amount":"69",
+        "id":4
+    },
+    {
+        "material":"Argen",
+        "size":"10mm",
+        "amount":"3",
+        "id":5
+    }
+]
