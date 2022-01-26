@@ -1,7 +1,7 @@
 import os,sys,json
 from os import path 
 
-class main():
+class main:
     def write(data, loc):
         with open(loc, 'w') as json_file:
             json.dump(data, json_file, indent = 4,
@@ -58,4 +58,25 @@ class main():
         print(temp)
         t= input()
             #print(item.get('amount'))
+    
+class dictTool():
+    def mount(loc):
+        db = []
+        with open(loc) as j:
+            db = json.load(j)
+        return db
+
+    def scan(loc):
+        cI = dictTool
+        db = cI.mount(loc)
+        return db
+
+    def append(obj,target):
+        cI = dictTool
+        db = cI.mount(target)
+        db.append(obj)
+        return db
+    
+            
+            
             

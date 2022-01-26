@@ -6,7 +6,7 @@ class Item(object):
         self.name = name
         self.amount = amount
         self.id = id
-        
+
 #Blueprint for the inventory item
 class Puck(object):
     material = ''
@@ -18,15 +18,16 @@ class Puck(object):
         self.size = size
         self.amount = amount
         self.id = id
-        
+
 class Mill_Tool(object):
     brand = ''
     coated = True
     size = 0.0
     amount = 0
     id = 0
-    def __init__(self,material,size,amount,id):
-        self.material = material
+    def __init__(self,brand,coated,size,amount,id):
+        self.brand = brand
+        self.coated = coated
         self.size = size
         self.amount = amount
         self.id = id

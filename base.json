@@ -10,5 +10,11 @@
         "size":"12mm",
         "amount":"30",
         "id":2
+    },
+    {
+        "material":"Argen",
+        "size":"10mm",
+        "amount":"2",
+        "id":3
     }
 ]
