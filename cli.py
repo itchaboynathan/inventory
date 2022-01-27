@@ -13,7 +13,7 @@ class face():
         lines = l_file.read()
         option_list = lines.splitlines()
 
-        if n in range(0,len(option_list)):
+        if x in range(0,len(option_list)):
             choice = option_list[x]
             print(choice.replace('\\n', '\n'))
         else:
