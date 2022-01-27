@@ -1,0 +1,7 @@
+-[Options]\n--------------\n0 - Argen\n1 - Origin\n2 - Wax\n3 - Prime
+\n-[Options]\n--------------\n0 - 10mm\n1 - 12mm\n2 - 14mm\n3 - 16mm\n4 - 18mm\n5 - 20mm\n6 - 22mm\n7 - 25mm\n8 - 30mm
+Not valid entry
+-[Options]\n--------------\n0 - Puck\n1 - Tool\n2 - Consumable
+-[Options]\n--------------\n0 - VHF\n1 - Amann Girrbach
+\n-[Options]\n--------------\n0 - Diamond Coated\n1 - No Diamond Coating
+\n-[Options]\n--------------\n0 - 2.5\n1 - 2.0\n2 - 1.5\n3 - .6
