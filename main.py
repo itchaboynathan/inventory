@@ -2,7 +2,7 @@ import os,json,cli,util,item
 from os import path
 url = 'base.json'
 listObj = []
-#Biggest test yet
+#Biggest test ye
 ################################################################## VIEW FUNCTION
 #Function to display1 what is in Array
 def view():
