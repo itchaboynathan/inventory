@@ -1,4 +1,4 @@
-import os,json,cli,util,item
+import os,json,cli,util,item,puck
 from os import path
 
 class Item(object):
@@ -51,8 +51,8 @@ def input_build():
 #choice to start puck input
         if choice == 0:
             cli.face.prompt('res/option_text.txt',0)
-            material = int(input('[Select]'))
 
+            material = int(input('[Select]'))
             if material in range(0,len(m_option)):
                 result = m_option[material]
                 material = result
@@ -111,8 +111,8 @@ def input_build():
                 user_interface.splash()
 
             cli.face.prompt('res/option_text.txt',6)
-
             size = int(input('[Select]'))
+
             if size in range(0,len(size_option)):
                 result = s_option[size]
                 size = result

@@ -12,21 +12,9 @@
         "id":2
     },
     {
-        "material":"Argen",
-        "size":"10mm",
-        "amount":"2",
-        "id":3
-    },
-    {
-        "material":"Argen",
-        "size":"10mm",
+        "material":"Origin",
+        "size":"16mm",
         "amount":"5",
-        "id":4
-    },
-    {
-        "material":"Wax",
-        "size":"25mm",
-        "amount":"3",
-        "id":5
+        "id":3
     }
 ]

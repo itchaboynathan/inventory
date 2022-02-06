@@ -23,17 +23,7 @@ class main:
             raise Exception('File not found!')
         with open(loc) as fp: #sets mylist to be the json list
             mylist = json.load(fp)
-'''
-this code is sudo but closest ive came
-        temp = []
-        for item in obj:
-            temp.append(item)
-        for item in temp:
-            if item['material'] == ol['material'] and item['size'] == ol['size']:
-                newValue = item['amount'] + ol['amount']
-                item['amount'].Value(newValue)
-                item.combine()
-'''
+
         for item in mylist: #goes through json checks if objects in json are in temp_list, if not it appends them
             if item not in temp_list:
                 temp_list.append(item)
