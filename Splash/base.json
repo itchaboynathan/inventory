@@ -16,5 +16,12 @@
         "size":"16mm",
         "amount":"5",
         "id":3
+    },
+    {
+        "brand":"VHF",
+        "coated":"True",
+        "size":"2.5mm",
+        "amount":"5",
+        "id":4
     }
 ]

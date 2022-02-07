@@ -37,7 +37,7 @@ class Mill_Tool(object):
 
 def input_build():
     print('\n')
-    url = 'base.json'
+    url = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'base.json')
     c_option = ['Puck', 'Tool', 'Consumable']
     m_option = ['Argen','Origin','Wax','Prime']
     s_option = ['10mm','12mm','14mm'
@@ -57,8 +57,8 @@ def input_build():
                 result = m_option[material]
                 material = result
             else:
-                user_interface.clear()
-                user_interface.splash()
+                cli.face.clear()
+                cli.face.splash(url)
 
             cli.face.prompt('res/option_text.txt',1)
 
@@ -67,8 +67,8 @@ def input_build():
                 result = s_option[size]
                 size = result
             else:
-                user_interface.clear()
-                user_interface.splash()
+                cli.face.clear()
+                cli.face.splash(url)
 
             amount = input('[Amount?]')
 
@@ -97,28 +97,32 @@ def input_build():
                 result = b_option[brand]
                 brand = result
             else:
-                user_interface.clear()
-                user_interface.splash()
+                cli.face.clear()
+                cli.face.splash(url)
 
             cli.face.prompt('res/option_text.txt',5)
             coated = int(input('[Select]'))
 
             if coated in range(0,len(coat_option)):
-                result = b_option[brand]
-                coated = result
+                if coated == 0:
+                    result = 'True'
+                    coated = result
+                elif coated == 1:
+                    result = 'False'
+                    coated = result
             else:
-                user_interface.clear()
-                user_interface.splash()
+                cli.face.clear()
+                cli.face.splash(url)
 
             cli.face.prompt('res/option_text.txt',6)
             size = int(input('[Select]'))
 
             if size in range(0,len(size_option)):
-                result = s_option[size]
+                result = size_option[size]
                 size = result
             else:
-                user_interface.clear()
-                user_interface.splash()
+                cli.face.clear()
+                cli.face.splash(url)
 
             amount = input('[Amount?]')
             # See if file exists
@@ -138,6 +142,7 @@ def input_build():
         elif choice == 2:
             print()
     else:
+        cli.face.clear()
+        cli.face.splash(url)
         raise Exception('Input Invalid!')
-        user_interface.clear()
-        user_interface.splash()
+

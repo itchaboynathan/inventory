@@ -16,8 +16,8 @@ def start():
             result = m_option[material]
             material = result
         else:
-            user_interface.clear()
-            user_interface.splash()
+            cli.face.clear()
+            cli.face.splash()
 
         cli.face.prompt('res/option_text.txt',1)
 
@@ -26,8 +26,8 @@ def start():
             result = s_option[size]
             size = result
         else:
-            user_interface.clear()
-            user_interface.splash()
+            cli.face.clear()
+            cli.face.splash()
 
         amount = input('[Amount?]')
 
