@@ -12,17 +12,27 @@ class main:
         return source
     
     def view(obj):
-        rowPuck = '[Type]: {type}\t[Material]: {material[0]}\t[Size]: {size[1]}\t[Amount]: {amount[2]}\t[ID]: {id}'
         for item in obj:
             
-            rowPuck.format(type = item['objType'],
-                material = item['material'],
-                size = item['size'],
-                amount = item['amount'],
-                id = str(item['id']))
-            
-            print(rowPuck)
-
+            if item['objType'] == 'Puck':
+                rowPuck = '[Type]: {type}\t[Material]: {material}\t[Size]: {size}\t[Amount]: {amount}\t[ID]: {id}'
+                x = rowPuck.format(type = item['objType'],
+                    material = item['material'],
+                    size = item['size'],
+                    amount = item['amount'],
+                    id = str(item['id']))
+                print(x)
+                
+            elif item['objType'] == 'Tool':
+                rowTool = '[Type]: {type}\t[Brand]: {brand}\t[Coated]: {coated}\t[Size]: {size}\t[Amount]: {amount}\t[ID]: {id}'
+                y = rowTool.format(type = item['objType'],
+                    brand = item['brand'],
+                    coated = item['coated'],
+                    size = item['size'],
+                    amount = item['amount'],
+                    id = str(item['id']))
+                print(y)
+                
     def combine(loc,tag):
         mylist = []
         temp_list = []
