@@ -7,12 +7,21 @@ class main:
             json.dump(data, json_file, indent = 4,
                 separators = (',', ':'))
 
+    def goodPath(url):
+        source = os.path.join(os.path.dirname(os.path.abspath(__file__)), url)
+        return source
+    
     def view(obj):
+        rowPuck = '[Type]: {type}\t[Material]: {material[0]}\t[Size]: {size[1]}\t[Amount]: {amount[2]}\t[ID]: {id}'
         for item in obj:
-            print(' +[Material] '+ item["material"]
-                ,' [Size] ' + item["size"]
-                ,' [Amount] ' + item["amount"]
-                ,'[ID]' + str(item["id"]))
+            
+            rowPuck.format(type = item['objType'],
+                material = item['material'],
+                size = item['size'],
+                amount = item['amount'],
+                id = str(item['id']))
+            
+            print(rowPuck)
 
     def combine(loc,tag):
         mylist = []

@@ -12,23 +12,27 @@ class Item(object):
 
 #Blueprint for the inventory item
 class Puck(object):
+    objType = ''
     material = ''
     size = 0
     amount = 0
     id = 0
-    def __init__(self,material,size,amount,id):
+    def __init__(self,objType,material,size,amount,id):
+        self.objType = objType
         self.material = material
         self.size = size
         self.amount = amount
         self.id = id
 
 class Mill_Tool(object):
+    objType = ''
     brand = ''
     coated = True
     size = 0.0
     amount = 0
     id = 0
-    def __init__(self,brand,coated,size,amount,id):
+    def __init__(self,objType,brand,coated,size,amount,id):
+        self.objType = objType
         self.brand = brand
         self.coated = coated
         self.size = size
@@ -37,7 +41,7 @@ class Mill_Tool(object):
 
 def input_build():
     print('\n')
-    url = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'base.json')
+    url = util.main.goodPath('base.json')
     c_option = ['Puck', 'Tool', 'Consumable']
     m_option = ['Argen','Origin','Wax','Prime']
     s_option = ['10mm','12mm','14mm'
@@ -81,7 +85,7 @@ def input_build():
                 length = len(listObj)
             id = length + 1
 
-            created_object = item.Puck(material,size,amount,id)
+            created_object = item.Puck('Puck',material,size,amount,id)
             util.dictTool.json_save(url,created_object)
             return created_object
 
@@ -134,7 +138,7 @@ def input_build():
                 length = len(listObj)
             id = length + 1
 
-            created_object = item.Mill_Tool(brand,coated,size,amount,id)
+            created_object = item.Mill_Tool('Tool',brand,coated,size,amount,id)
             util.dictTool.json_save(url,created_object)
             return created_object
 

@@ -1,27 +1,38 @@
 [
     {
+        "objType":"Puck",
         "material":"Origin",
         "size":"12mm",
         "amount":"50",
         "id":1
     },
     {
+        "objType":"Puck",
         "material":"Origin",
         "size":"12mm",
         "amount":"30",
         "id":2
     },
     {
+        "objType":"Puck",
         "material":"Origin",
         "size":"16mm",
         "amount":"5",
         "id":3
     },
     {
+        "objType":"Tool",
         "brand":"VHF",
         "coated":"True",
         "size":"2.5mm",
         "amount":"5",
         "id":4
+    },
+    {
+        "objType":"Puck",
+        "material":"Origin",
+        "size":"20mm",
+        "amount":"7",
+        "id":5
     }
 ]
