@@ -3,14 +3,14 @@
         "objType":"Puck",
         "material":"Origin",
         "size":"12mm",
-        "amount":"50",
+        "amount":"5",
         "id":1
     },
     {
         "objType":"Puck",
         "material":"Origin",
         "size":"12mm",
-        "amount":"30",
+        "amount":"3",
         "id":2
     },
     {
@@ -34,5 +34,13 @@
         "size":"20mm",
         "amount":"7",
         "id":5
+    },
+    {
+        "objType":"Tool",
+        "brand":"Amann Girrbach",
+        "coated":"False",
+        "size":"2.0mm",
+        "amount":"4",
+        "id":6
     }
 ]

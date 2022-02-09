@@ -50,7 +50,7 @@ class face():
         util.main.view(listObj)
         t = input()
         face.clear()
-        face.splash(url)
+        face.splash(url,'res/splash.txt')
 
     #method for displaying any prompt from text file
     def prompt(file_path,x):
