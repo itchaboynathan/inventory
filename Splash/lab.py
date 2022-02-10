@@ -39,7 +39,7 @@ t = util.dictTool.index_Folder('res')
 print(t)    
 
 
-methods = {}
+'''methods = {}
 
 def add_method(name, method):
     methods[name] = method
@@ -53,4 +53,4 @@ add_method('log_goodbye', (
 
 
 
-methods['log_goodbye']
+methods['log_goodbye']'''
