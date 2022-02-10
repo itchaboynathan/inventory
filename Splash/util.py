@@ -78,22 +78,18 @@ class main:
             #print(item.get('amount'))
 
 class dictTool():
+    def index_Folder(folder_loc):
+        return os.listdir(main.goodPath(folder_loc))
+    
     def mount(loc):
-        db = []
         with open(loc) as j:
-            db = json.load(j)
-        return db
+            return json.load(j)
 
     def scan(loc):
-        cI = dictTool
-        db = cI.mount(loc)
-        return db
+        return dictTool.mount(loc)
 
     def append(obj,target):
-        cI = dictTool
-        db = cI.mount(target)
-        db.append(obj)
-        return db
+        return dictTool.mount(target).append(obj)
 
     def json_save(url,object):
         if path.isfile(url)is False:
