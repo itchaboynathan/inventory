@@ -55,7 +55,6 @@ class main:
         print("List After removing duplicates ", mylist)
 
     def test(loc,tag,tag2,tag3):
-        mylist = []
         temp = []
 
         with open(loc) as fp: #sets mylist to be the json list

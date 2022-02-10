@@ -37,3 +37,20 @@ class databaseEditor():
 t = util.dictTool.index_Folder('res')
 #databaseEditor.combine_Database('base.json','material','size','amount')
 print(t)    
+
+
+methods = {}
+
+def add_method(name, method):
+    methods[name] = method
+
+add_method('log_goodbye', (
+    
+    # This logs goodbye
+    print('goodbye')
+))
+
+
+
+
+methods['log_goodbye']
