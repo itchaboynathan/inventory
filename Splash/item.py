@@ -58,8 +58,7 @@ def input_build():
 
             material = int(input('[Select]'))
             if material in range(0,len(m_option)):
-                result = m_option[material]
-                material = result
+                material = m_option[material]
             else:
                 cli.face.clear()
                 cli.face.splash(url)
@@ -68,8 +67,7 @@ def input_build():
 
             size = int(input('[Select]'))
             if size in range(0,len(s_option)):
-                result = s_option[size]
-                size = result
+                size = s_option[size]
             else:
                 cli.face.clear()
                 cli.face.splash(url)
@@ -98,8 +96,7 @@ def input_build():
             brand = int(input('[Select]'))
 
             if brand in range(0,len(b_option)):
-                result = b_option[brand]
-                brand = result
+                brand = b_option[brand]
             else:
                 cli.face.clear()
                 cli.face.splash(url)

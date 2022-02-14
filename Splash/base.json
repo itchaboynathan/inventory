@@ -27,5 +27,12 @@
         "size":"2.5mm",
         "amount":"5",
         "id":4
+    },
+    {
+        "objType":"Puck",
+        "material":"Origin",
+        "size":"10mm",
+        "amount":"3",
+        "id":5
     }
 ]
