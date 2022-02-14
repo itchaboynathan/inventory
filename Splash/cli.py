@@ -60,8 +60,8 @@ class face():
         option_list = lines.splitlines()
 
         if x in range(0,len(option_list)):
-            choice = option_list[x]
-            print(choice.replace('\\n', '\n'))
+            #choice = option_list[x]
+            print(option_list[x].replace('\\n', '\n'))
         else:
             raise Exception('Param not found!')
         l_file.close()

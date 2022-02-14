@@ -5,12 +5,10 @@ class databaseEditor():
     def save_Database(file_loc):
         if path.isfile(file_loc)is False:
             raise Exception('File not found!')
-        listObj = util.dictTool.mount(file_loc)
-
-        listObj.append(object.__dict__)
-        util.main.write(listObj,file_loc)
-
-        print()
+        else:
+            listObj = util.dictTool.mount(file_loc)
+            listObj.append(object.__dict__)
+            util.main.write(listObj,file_loc)
         
     def combine_Database(db_loc,first_check,second_check,tar_item):
         storage_List = []
@@ -34,9 +32,8 @@ class databaseEditor():
                         print(storage_List)
                 
         #print(original_List,'\n\n', storage_List)
-t = util.dictTool.index_Folder('res')
 #databaseEditor.combine_Database('base.json','material','size','amount')
-print(t)    
+
 
 
 '''methods = {}

@@ -109,11 +109,9 @@ def input_build():
 
             if coated in range(0,len(coat_option)):
                 if coated == 0:
-                    result = 'True'
-                    coated = result
+                    coated = 'True'
                 elif coated == 1:
-                    result = 'False'
-                    coated = result
+                    coated = 'False'
             else:
                 cli.face.clear()
                 cli.face.splash(url)
@@ -122,8 +120,7 @@ def input_build():
             size = int(input('[Select]'))
 
             if size in range(0,len(size_option)):
-                result = size_option[size]
-                size = result
+                size = size_option[size]
             else:
                 cli.face.clear()
                 cli.face.splash(url)
@@ -135,8 +132,7 @@ def input_build():
             # Otherwise open file
             with open(url) as fp:
                 listObj = json.load(fp)
-                length = len(listObj)
-            id = length + 1
+            id = len(listObj) + 1
 
             created_object = item.Mill_Tool('Tool',brand,coated,size,amount,id)
             util.dictTool.json_save(url,created_object)

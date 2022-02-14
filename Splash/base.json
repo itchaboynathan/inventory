@@ -27,20 +27,5 @@
         "size":"2.5mm",
         "amount":"5",
         "id":4
-    },
-    {
-        "objType":"Puck",
-        "material":"Origin",
-        "size":"20mm",
-        "amount":"7",
-        "id":5
-    },
-    {
-        "objType":"Tool",
-        "brand":"Amann Girrbach",
-        "coated":"False",
-        "size":"2.0mm",
-        "amount":"4",
-        "id":6
     }
 ]

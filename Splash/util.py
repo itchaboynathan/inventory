@@ -8,8 +8,7 @@ class main:
                 separators = (',', ':'))
 
     def goodPath(url):
-        source = os.path.join(os.path.dirname(os.path.abspath(__file__)), url)
-        return source
+        return os.path.join(os.path.dirname(os.path.abspath(__file__)), url)
     
     def view(obj):
         for item in obj:
@@ -34,7 +33,6 @@ class main:
                 print(y)
                 
     def combine(loc,tag):
-        mylist = []
         temp_list = []
         item_id = [] #incase i wanna use a loop to delte items
 
@@ -97,3 +95,5 @@ class dictTool():
 
         listObj.append(object.__dict__)
         main.write(listObj,url)
+
+#print(dictTool.index_Folder('./res'))
